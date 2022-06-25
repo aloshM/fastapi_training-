@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.78.0"
+uvicorn = "^0.18.1"
+SQLAlchemy = "^1.4.39"
+tenacity = "^8.0.1"
+alembic = "^1.8.0"
+pydantic = {extras = ["email"], version = "^1.9.1"}
+numpy = "^1.23.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
